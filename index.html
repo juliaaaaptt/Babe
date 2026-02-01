@@ -5,19 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pour Quentin ❤️</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="heart-icon">❤️</div>
-            <h1>Mon cher Quentin...</h1>
-            <p class="question">Veux-tu être mon Valentin ?</p>
-            
-            <div class="buttons">
-                <button id="yesBtn" onclick="celebrate()">OUI !!! ❤️</button>
-                <button id="noBtn">Non 😶</button>
-            </div>
+    <div class="card" id="mainCard">
+        <div class="header-text">Mon cher Quentin...</div>
+        
+        <div class="illustration">
+            <svg viewBox="0 0 200 200" width="180" height="180">
+                <circle cx="100" cy="100" r="90" fill="#fff5f7" />
+                <path d="M100 60 Q110 40 130 50 T130 80 L100 120 L70 80 T70 50 Q90 40 100 60" fill="#ff4d6d" />
+                <text x="50%" y="160" text-anchor="middle" font-size="12" fill="#d63384" font-family="Arial">❤️ ❤️ ❤️</text>
+            </svg>
+        </div>
+
+        <div class="main-question">Veux-tu être mon Valentin ?</div>
+
+        <div class="buttons-container">
+            <button id="yesBtn" onclick="celebrate()">❤️ OUI !!! ❤️</button>
+            <button id="noBtn">Non 😋</button>
         </div>
     </div>
     <script src="script.js"></script>
